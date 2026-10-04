@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'Minecraft';
+    src: url('./assets/fonts/Minecraft.ttf') format('truetype');
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@keyframes pageEnter {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.page-transition {
+    animation: pageEnter 0.22s ease forwards;
+    width: 100%;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
